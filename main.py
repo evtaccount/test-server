@@ -262,4 +262,4 @@ async def send_films(request):
 
 
 if __name__ == '__main__':
-    app.run(host="https://photo-timer-server.herokuapp.com/", port=8001, debug=True)
+    app.run(host="localhost", port=8001, debug=True)
