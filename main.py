@@ -11,22 +11,11 @@ import films
 app = Sanic(__name__)
 
 
-def _response(data:  None, error: str = None):
+def _response(data: films, error: str = None):
     json = {}
 
-    if data is not None:
-        json['success'] = True
-        json['data'] = data
-
-        return response.json(json)
-
-    if error is not None:
-        json['success'] = False
-        json['message'] = error
-
-        return response.json(json)
-
     json['success'] = True
+    json['data'] = films
 
     return response.json(json)
 
