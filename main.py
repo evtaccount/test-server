@@ -11,7 +11,7 @@ import films
 app = Sanic(__name__)
 
 
-def _response(data: dict = None, error: str = None):
+def _response(data:  None, error: str = None):
     json = {}
 
     if data is not None:
